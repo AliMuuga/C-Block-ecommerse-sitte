@@ -92,7 +92,7 @@ p {
     height: 80px;
     background: #FFFFFF;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 0 5%;
     z-index: 1000;
@@ -526,6 +526,7 @@ footer p {
 
     .mobile-menu-toggle {
         display: flex;
+        margin-left: auto;
     }
 
     /* Hero Section */
