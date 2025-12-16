@@ -195,6 +195,16 @@
                 heroSection.style.backgroundPositionY = -(scrolled * 0.5) + 'px';
             }
         });
+
+        // Background image slideshow
+        const heroSection = document.querySelector('.hero-section');
+        const images = ['Assets/main.jpg', 'Assets/Image1.jpg'];
+        let currentIndex = 0;
+
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % images.length;
+            heroSection.style.backgroundImage = `url('${images[currentIndex]}')`;
+        }, 3000);
     </script>
 </body>
 </html>
