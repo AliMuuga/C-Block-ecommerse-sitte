@@ -100,8 +100,8 @@ p {
 }
 
 .nav-logo {
-    height: 2rem;
-    width: auto;
+    width: 200px;
+    height: auto;
     object-fit: contain;
 }
 
