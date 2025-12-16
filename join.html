@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Join the C-Block team as a brand ambassador, creator, or collaborator. Be part of the movement.">
-    <title>Join the Team | C-BLOCK</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>C-Block - Join the Team</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="Img/Logo.png" type="image/png" />
 </head>
 <body>
+
     <!-- NAVIGATION -->
     <nav class="navbar">
         <ul class="nav-menu" id="navMenu">
@@ -31,214 +29,64 @@
         </div>
     </nav>
 
-    <!-- INTRO SECTION -->
-    <section class="welcome-section">
-        <div class="container text-center">
-            <h1>Join the Movement</h1>
-            <p class="mt-2" style="max-width: 700px; margin: 2rem auto;">
-                C-Block is always building with creatives, ambassadors, and partners who align with our vision.
-            </p>
-        </div>
+  <!-- Page Content -->
+  <section class="page-content">
+    <h2>Want to Earn with C-Block?</h2>
+    <p>Join our team and gain opportunities in fashion, events, and business. Whether you’re into modeling, sa
+les, or collaborations, there’s a spot for you.</p>                                                           
+    <form class="join-form">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="text" name="whatsapp" placeholder="WhatsApp Number" required>
+      <select name="role" required>
+        <option value="">Select Role</option>
+        <option value="modeling">Modeling</option>
+        <option value="sales">Sales</option>
+        <option value="collaboration">Collaboration</option>
+      </select>
+      <button class="btn" type="submit">We'll Reach Out!</button>
+    </form>
+
+    <!-- Sign-Up Section -->
+    <section class="sign-up">
+      <h2>Stay Connected</h2>
+      <p>Sign up for updates, exclusive drops, and community perks.</p>
+      <form class="join-form">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <button class="btn" type="submit">Sign Up</button>
+      </form>
     </section>
+  </section>
 
-    <!-- OPPORTUNITIES -->
-    <section class="section-grey">
-        <div class="container">
-            <h2 class="text-center mb-4">OPPORTUNITIES</h2>
-            
-            <div class="benefits-list">
-                <div class="benefit-item">
-                    <h3>🌟 Brand Ambassadors</h3>
-                    <p>
-                        Represent C-Block on social media, at events, and in your community. 
-                        Receive free clothing, exclusive perks, and grow your personal brand alongside ours.
-                    </p>
-                    <ul style="margin-top: 1rem; padding-left: 1.5rem; color: #555555;">
-                        <li>Monthly clothing packages</li>
-                        <li>Commission on referrals</li>
-                        <li>Featured on our platforms</li>
-                        <li>Event invitations</li>
-                    </ul>
-                </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 C-Block. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="Index.html">Home</a>
+        <a href="clothing.html">Clothing</a>
+        <a href="community.html">Community</a>
+        <a href="join.html">Join</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
 
-                <div class="benefit-item">
-                    <h3>🎨 Creators & Influencers</h3>
-                    <p>
-                        Collaborate with C-Block on content creation, campaigns, and brand partnerships. 
-                        Build your portfolio while contributing to the culture.
-                    </p>
-                    <ul style="margin-top: 1rem; padding-left: 1.5rem; color: #555555;">
-                        <li>Paid collaboration opportunities</li>
-                        <li>Creative freedom and support</li>
-                        <li>Cross-promotion with our network</li>
-                        <li>Access to exclusive shoots</li>
-                    </ul>
-                </div>
+  <script>
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const navMenu = document.getElementById('navMenu');
 
-                <div class="benefit-item">
-                    <h3>🎉 Event Collaborators</h3>
-                    <p>
-                        Partner with us to host or co-create events, pop-ups, and cultural experiences 
-                        that bring the community together.
-                    </p>
-                    <ul style="margin-top: 1rem; padding-left: 1.5rem; color: #555555;">
-                        <li>Event planning support</li>
-                        <li>Marketing and promotion</li>
-                        <li>Shared revenue opportunities</li>
-                        <li>Brand visibility</li>
-                    </ul>
-                </div>
+    mobileMenuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
 
-                <div class="benefit-item">
-                    <h3>🤝 Fashion & Lifestyle Partners</h3>
-                    <p>
-                        If you're a brand, retailer, or creative business that aligns with our values, 
-                        let's explore partnership opportunities.
-                    </p>
-                    <ul style="margin-top: 1rem; padding-left: 1.5rem; color: #555555;">
-                        <li>Co-branded collections</li>
-                        <li>Distribution partnerships</li>
-                        <li>Joint marketing campaigns</li>
-                        <li>Strategic collaborations</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- WHAT WE LOOK FOR -->
-    <section class="section-white">
-        <div class="container">
-            <h2 class="text-center mb-4">WHAT WE LOOK FOR</h2>
-            
-            <div class="features-grid" style="max-width: 1000px; margin: 0 auto;">
-                <div class="feature-card">
-                    <div class="feature-icon">🎯</div>
-                    <h3>Authenticity</h3>
-                    <p>Be real, be yourself. We value genuine connections over performative engagement.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">🚀</div>
-                    <h3>Drive</h3>
-                    <p>Show initiative and passion. We work with people who are building something meaningful.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">🌍</div>
-                    <h3>Cultural Awareness</h3>
-                    <p>Understand and respect the modern African lifestyle, creativity, and community.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">💎</div>
-                    <h3>Quality</h3>
-                    <p>Whether content, style, or character — we align with those who prioritize excellence.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">🔥</div>
-                    <h3>Energy</h3>
-                    <p>Bring positive vibes, creativity, and enthusiasm to everything you do.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">🤝</div>
-                    <h3>Collaboration</h3>
-                    <p>Work well with others and contribute to the community's growth, not just your own.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- APPLICATION SECTION -->
-    <section class="r200-section">
-        <div class="container text-center">
-            <h2 class="mb-2">READY TO BUILD WITH US?</h2>
-            <p class="mb-3" style="font-size: 1.2rem; color: rgba(255,255,255,0.9); max-width: 700px; margin: 0 auto 2rem;">
-                Whether you're a creator, entrepreneur, or someone who just wants to be part of something bigger — 
-                we'd love to hear from you.
-            </p>
-            
-            <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 12px; max-width: 600px; margin: 0 auto 2rem; border: 2px solid rgba(255,255,255,0.2);">
-                <h3 style="color: #FFFFFF; margin-bottom: 1rem;">How to Apply</h3>
-                <p style="color: rgba(255,255,255,0.9); font-size: 1rem; line-height: 1.8;">
-                    Send us an email at <strong>cblock.agency2@gmail.com</strong> with:
-                </p>
-                <ul style="text-align: left; max-width: 500px; margin: 1.5rem auto 0; color: rgba(255,255,255,0.9); line-height: 2;">
-                    <li>Your name and location</li>
-                    <li>What opportunity interests you</li>
-                    <li>Why you want to join C-Block</li>
-                    <li>Links to your social media or portfolio</li>
-                    <li>Any relevant experience or skills</li>
-                </ul>
-            </div>
-
-            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                <a href="contact.html" class="btn btn-primary">CONTACT US</a>
-                <a href="https://instagram.com/c_block.pvt" target="_blank" class="btn" style="background: transparent; color: #FFFFFF; border-color: #FFFFFF;">DM ON INSTAGRAM</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- TESTIMONIALS / COMMUNITY VOICES -->
-    <section class="section-white">
-        <div class="container text-center">
-            <h2 class="mb-4">VOICES FROM THE COMMUNITY</h2>
-            
-            <div class="features-grid" style="max-width: 1000px; margin: 0 auto;">
-                <div class="feature-card" style="font-style: italic;">
-                    <p style="font-size: 1.1rem; color: #333333; margin-bottom: 1rem;">
-                        "Being part of C-Block has opened so many doors. It's more than a brand — it's a family."
-                    </p>
-                    <h4 style="font-size: 1rem; font-weight: 600; color: #000000;">— Ambassador</h4>
-                </div>
-
-                <div class="feature-card" style="font-style: italic;">
-                    <p style="font-size: 1.1rem; color: #333333; margin-bottom: 1rem;">
-                        "The energy, the community, the opportunities — C-Block is exactly what we needed."
-                    </p>
-                    <h4 style="font-size: 1rem; font-weight: 600; color: #000000;">— Community Member</h4>
-                </div>
-
-                <div class="feature-card" style="font-style: italic;">
-                    <p style="font-size: 1.1rem; color: #333333; margin-bottom: 1rem;">
-                        "Finally, a brand that actually represents our lifestyle and values quality over quantity."
-                    </p>
-                    <h4 style="font-size: 1rem; font-weight: 600; color: #000000;">— Creator</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <p style="color: #FFFFFF;">C-Block isn't just a brand — it's a movement toward better living.</p>
-            <div class="social-links">
-                <a href="https://instagram.com/c_block.pvt" target="_blank">Instagram</a>
-                <a href="https://instagram.com/c_block_store_off" target="_blank">Store</a>
-                <a href="https://instagram.com/c_block_vibes" target="_blank">Vibes</a>
-                <a href="https://tiktok.com/@c.block.official.retail.store" target="_blank">TikTok</a>
-            </div>
-            <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.7; color: #FFFFFF;">© 2025 C-BLOCK. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- MOBILE MENU SCRIPT -->
-    <script>
-        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
-        const navMenu = document.getElementById('navMenu');
-
-        mobileMenuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
-
-        document.querySelectorAll('.nav-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-            });
-        });
-    </script>
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+      });
+    });
+  </script>
 </body>
 </html>

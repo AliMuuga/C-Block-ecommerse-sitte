@@ -822,3 +822,143 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
 }
+
+/* ===== Join Page Styles ===== */
+.page-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 64px 20px;
+  text-align: center;
+}
+
+.page-content h2 {
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 24px;
+}
+
+.page-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.join-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.join-form button {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.join-form button:hover {
+  background: #444;
+  transform: translateY(-2px);
+}
+
+.sign-up {
+  background: #f0f0f0;
+  padding: 60px 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.sign-up h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+  font-weight: 900;
+}
+
+.sign-up p {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.sign-up form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.sign-up input[type="email"] {
+  padding: 12px 20px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.sign-up button {
+  padding: 12px 24px;
+  border-radius: 50px;
+  border: none;
+  background: #111;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sign-up button:hover {
+  background: #444;
+  transform: translateY(-2px);
+}
+
+.footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.footer-links {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #ccc;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
