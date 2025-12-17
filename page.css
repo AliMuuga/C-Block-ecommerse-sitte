@@ -475,3 +475,103 @@ a {
 .cart-summary .checkout-btn:hover {
   background: #333;
 }
+/*************************************************************
+ 🔹 PRODUCT GALLERY (T-Shirts / Shop Page Only)
+*************************************************************/
+
+/* ===== Grid Layout ===== */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  margin-top: 32px;
+}
+
+/* ===== Product Card ===== */
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ===== Image Hover Swap ===== */
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 0.45s ease, transform 0.45s ease;
+}
+
+/* Front Image */
+.img-front {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Back Image */
+.img-back {
+  opacity: 0;
+  transform: scale(1.05);
+}
+
+/* Hover Effect */
+.product-card:hover .img-front {
+  opacity: 0;
+}
+
+.product-card:hover .img-back {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ===== Text ===== */
+.product-card h3 {
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.product-card p {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+/* ===== Button ===== */
+.product-card .btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background: transparent;
+  border: 1px solid #111;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.product-card .btn:hover {
+  background: #111;
+  color: #fff;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .product-grid {
+    gap: 24px;
+  }
+}

@@ -960,3 +960,160 @@ html {
 .footer-links a:hover {
   color: #fff;
 }
+/* ===================================
+  Clothing section 
+   =================================== */
+
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 3rem;
+}
+
+@media (max-width: 1200px) {
+    .shop-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .shop-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+.shop-item {
+    text-align: center;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.shop-item img {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 1.5rem;
+    display: block;
+}
+
+.shop-item h3 {
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    margin-bottom: 0.4rem;
+    text-transform: uppercase;
+}
+
+.shop-item .price {
+    font-size: 0.9rem;
+    margin-bottom: 0.7rem;
+}
+
+.shop-colors {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 0.6rem;
+}
+
+.shop-color {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #bbb;
+}
+
+.shop-color.black { background: #000; }
+.shop-color.white { background: #fff; }
+
+.shop-rating {
+    font-size: 0.85rem;
+    color: #c6e200;
+}
+
+.shop-rating span {
+    color: #000;
+    font-size: 0.75rem;
+}/* ===================================
+   SHOP IMAGE SWAP + COLOR LOGIC
+   =================================== */
+
+/* Prevent image drag & flicker */
+.shop-image {
+    pointer-events: none;
+    user-select: none;
+    will-change: transform, opacity;
+}
+
+/* Fade effect when swapping images */
+.shop-image.fade-out {
+    opacity: 0;
+}
+
+.shop-image.fade-in {
+    opacity: 1;
+}
+
+/* Optional subtle shadow for premium look */
+.shop-image-box {
+    border: 1px solid #e5e5e5;
+}
+
+/* Improve color swatch visibility on white */
+.shop-color.white {
+    background: #fff;
+    border: 1px solid #999;
+}
+
+/* Active color ring */
+.shop-color.active {
+    border: 2px solid #000;
+    transform: scale(1.15);
+}
+/* SHOP IMAGE FRAME */
+.shop-image-box {
+    aspect-ratio: 1/1;
+    background: #f2f2f2;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.shop-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity .3s ease, transform .6s ease;
+}
+
+/* QUICK VIEW MODAL */
+.quick-view-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+.quick-view-modal.active { display: flex; }
+
+.quick-view-content {
+    background: #fff;
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+.quick-view-content img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    margin-bottom: 1rem;
+}
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
