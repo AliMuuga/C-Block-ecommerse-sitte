@@ -1072,7 +1072,7 @@ html {
 }
 /* SHOP IMAGE FRAME */
 .shop-image-box {
-    aspect-ratio: 1/1;
+    aspect-ratio: 5/5;
     background: #f2f2f2;
     overflow: hidden;
     margin-bottom: 1.5rem;
